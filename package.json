@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start:dev": "MONGO_URI='mongodb://localhost:27017' nodemon ./bin/www",
+    "start:dev": "MONGO_URI='mongodb+srv://user1:uIaZDhT9XEo0mzmk@cluster0.ifgjkqn.mongodb.net/?retryWrites=true&w=majority' nodemon ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
