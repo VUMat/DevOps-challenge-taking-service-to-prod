@@ -30,8 +30,7 @@ jobs:
       - uses: azure/k8s-set-context@v2
         with:
           method: kubeconfig
-          kubeconfig: ${{ secrets.KUBERNETES_SECRET }}
-          context: current-context # current-context from kubeconfig is used as default        
+          kubeconfig: ${{ secrets.KUBERNETES_SECRET }}        
 
           
       - name: Deploy to the Kubernetes cluster
