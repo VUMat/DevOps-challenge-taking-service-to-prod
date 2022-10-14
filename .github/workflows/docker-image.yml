@@ -26,12 +26,13 @@ jobs:
       - name: push
         run: docker push vumat/devops-node:latest
         
-      - name: Set the Kubernetes context
-        uses: azure/k8s-set-context@v2
+        
+      - uses: azure/k8s-set-context@v2
         with:
-          method: service-account
-          k8s-url: https://34.170.50.78
-          k8s-secret: ${{ secrets.KUBERNETES_SECRET }}
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBERNETES_SECRET }}
+          context: current-context # current-context from kubeconfig is used as default        
+
           
       - name: Deploy to the Kubernetes cluster
         uses: azure/k8s-deploy@v1
