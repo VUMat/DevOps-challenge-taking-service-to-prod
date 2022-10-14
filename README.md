@@ -11,7 +11,6 @@ We look at the pipeline as consisting of the following stages:
 2. **Continuous Integration** - Any change in the repository that is pushed is automatically built as a docker container and published to a docker registry.
 3. **Continuous Deployment** - Latest docker image deployed to a container platform and available to use.
 4. **Continuous Monitoring** - The service health status is always available, and alert is sent when the service is not functioning. Logs are delivered and available.
-
 ## Required solution:
 **all the services can be deployed on one local k8s cluster (kind, minikube) / Managed Kubernetes as a Service (EKS, GKE)**
 
