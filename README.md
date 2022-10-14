@@ -7,7 +7,7 @@ Build a full integration, deployment and monitoring pipeline for a service deplo
 
 We look at the pipeline as consisting of the following stages:
 
-1. **Infrastructure as a code** - (optional) use terraform to setup k8s cluster on one of the cloud providers (AWS, GCP)
+1. **Infrastructure as a code** - (optional) use terraform to setup k8s cluster on one of the cloud providers (AWS, GCP).
 2. **Continuous Integration** - Any change in the repository that is pushed is automatically built as a docker container and published to a docker registry.
 3. **Continuous Deployment** - Latest docker image deployed to a container platform and available to use.
 4. **Continuous Monitoring** - The service health status is always available, and alert is sent when the service is not functioning. Logs are delivered and available.
